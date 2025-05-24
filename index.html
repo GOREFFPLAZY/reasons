@@ -15,11 +15,21 @@
             padding: 50px;
             
         }
-        h1 {
-            font-size: 50px;
-            font-style: italic;
-            font-display: swap;
-            color: #ff9acd;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 80%;
+            box-shadow: 0 0 60px rgba(255, 105, 180, 0.5);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+            rotate: 360deg;
+            transition: rotate 0.5s ease, transform 0.3s ease;
+        }
+        img:active {
+            transform: scale(0.9);
+            transition: transform 0.2s ease;
         }
         p {
             font-size: 20px;
